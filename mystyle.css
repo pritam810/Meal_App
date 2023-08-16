@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+body {
+  background: rgb(43, 29, 15);
+  
+  
+}
+#nav-section {
+  border: 2px solid green;
+  width: 100vw;
+  height: 50px;
+  background: blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+.meal-app {
+  height: 100%;
+  width: 30%;
+  text-align: center;
+
+  /* border:2px solid yellow; */
+  display: flex;
+  /* justify-content: space-between; */
+  padding-top: 8px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgb(34, 8, 8);
+}
+.favorites {
+  /* display:inline-block; */
+  /* justify-content: space-between; */
+  height: 100%;
+  /* border:2px solid yellow; */
+
+  align-items: center;
+  padding-right: 20px;
+
+  color: antiquewhite;
+  font-size: 25px;
+  padding-top: 8px;
+}
+#top-section {
+  margin-top: 0px;
+  background: rgba(234, 212, 212, 0.712);
+}
+.search-meal {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+#search-boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 100%;
+}
+form {
+  padding-bottom: 20px;
+}
+form input {
+  padding: 10px;
+  width: 40vw;
+  color: black;
+  font-size: 20px;
+  border-radius: 8px;
+}
+form button {
+  padding: 10px;
+  width: 8vw;
+  height: 6vh;
+  border-radius: 8px;
+  background: red;
+  color: white;
+}
+::placeholder {
+  font-size: 18px;
+  color: rgb(84, 81, 81);
+}
+input:hover {
+  background-color: rgb(179, 170, 170);
+}
+
+#bottom-section {
+  background: rgb(43, 29, 15);
+}
+
+/* main section */
+
+#meal-container {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  place-items: center;
+
+}
+
+.receipe {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border-radius: 5px;
+
+  box-shadow: 0 5px 10px rgba(73 73 73 0.1) -5px -5px 10px rgba(34 34 34 0.5);
+  cursor: pointer;
+  max-width: 350px;
+  position:relative;
+  
+}
+
+.receipe:hover {
+  transform: scale(1.03);
+  transition: transform 0.1s;
+}
+
+.receipe img {
+  height: 300px;
+}
+.receipe h3 {
+  font-size: 24px;
+  margin: 5px;
+}
+.receipe p {
+  font-size: 20px;
+  color: #4a4a4a;
+  margin: 5px 0;
+}
+
+.receipe span {
+  font-weight: 600;
+}
+.view-button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+
+  background-color: red;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+/* receipe details */
+.receipe-details {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: hsl(30, 38%, 30%); */
+  background-color:white;
+  color:black;
+  border-radius: 12px;
+  width: 50%;
+  height: 80%;
+  font-size: 20px;
+  /* color: white; */
+  transition: all 0.5s ease-in-out;
+  overflow: scroll;
+}
+#receipe-details-content {
+  padding-left: 30px;
+  padding-right:30px;
+}
+.receipeName {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.ingredientList {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.instructions {
+  line-height: 40px;
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+
+#receipe-close-btn {
+  border: none;
+  font-size: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: red;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* favorite button */
+
+.heart {
+  position:absolute;
+  top:10px;
+  right:10px;
+  border: none;
+   padding: 5px; 
+
+  /* background-color: white; */
+  margin: auto;
+  font-size: 28px;
+  border-radius: 5px;
+
+  
+}
+.heart:hover {
+  position:absolute;
+  top:10px;
+  right:10px;
+
+  border: none;
+  padding: 5px;
+
+  /* background-color: rgb(186, 74, 74); */
+  margin: auto;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.ch {
+  position:absolute;
+  top:10px;
+  right:10px;
+  border: none;
+   padding: 5px; 
+
+  background-color: rgb(186, 74, 74);
+  margin: auto;
+  font-size: 28px;
+  border-radius: 5px;
+}
+
+.video-wrap{
+  margin-right:50px;
+}
+
+#favorite-sec{
+  margin:50px;
+  background: rgb(43, 29, 15);
+  display:none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal app</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav id="nav-section">
+      <div class="meal-app"><h2>Meal App</h2</div>
+    </nav>
+    <main>
+      <!-- form tag section  -->
+      <section id="top-section">
+        <div class="search-meal"><h2>Search Your Favourite Meal</h2></div>
+        <div id="search-boxes">
+          <form>
+            <input type="text" id="search-box" placeholder="Search meals..." />
+            <button type="submit" id="search-btn">Search</button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <!-- meal container div -->
+        <div id="meal-container"><h2>your search results:</h2></div>
+        <div class="receipe-details">
+          <button type="button" id="receipe-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <!-- meal details content div -->
+          <div id="receipe-details-content"></div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>.
+  </body>
+</html>
